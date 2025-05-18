@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #469D89;
+    --big-font: 5em;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.navlist a:hover,
+.navlist a:active {
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section{
+    padding: 160px 15% 120px;
+}
+.character {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(xiaogif.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; /* ensure overlay doesn't spill out */
+}
+
+.character::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% black overlay */
+    z-index: 1;
+}
+
+/* Optional: If you have content inside .character, add z-index */
+.character > * {
+    position: relative;
+    z-index: 2;
+}
+
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.character-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.character-text h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.character-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 500;
+    transition: all .45s ease;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.lore{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.lore-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.lore-img {
+    transition: transform 0.3s ease;
+}
+.lore-img:hover {
+    transform: translateY(20px);
+}
+.lore-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.lore-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.lore-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+.weapons{
+    background: var(--second-bg-color);
+}
+.main-text{
+    text-align: center;
+}
+.main-text p{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.weapons-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box{
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.box p{
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.artifacts-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box{
+    background: var(--second-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.box h5{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.box p{
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.Team{
+    background: var(--second-bg-color);
+}
+.main-text{
+    text-align: center;
+}
+.main-text p{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.main-text h3{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.team-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box{
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.box p{
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+/*login*/
+
+
+/* Remove the background color from the button */
+#openButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* Add any additional styles you want for the button text */
+    color: #fff; /* Change the button text color if needed */
+    font-size: 16px; /* Adjust the font size if needed */
+    /* Add more styles as necessary */
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+ 
+/* Styles for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+    header {
+        padding: 22px 8%;
+    }
+
+    section {
+        padding: 130px 8% 100px;
+    }
+
+    :root {
+        --big-font: 4em;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(54, 52, 52, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 10px 20px;
+    z-index: 1002;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1003;
+  }
+    .navlist {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%; /* or 60%, 70% depending on how much screen it should take */
+        height: 100vh;
+        background: var(--second-bg-color); /* or a solid like #111 */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 20px;
+        transition: 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .navlist.active {
+        left: 0;
+    }
+
+    .navlist a {
+        margin: 15px 0;
+        font-size: 18px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Optional dim overlay when nav is active */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+    }
+
+    .overlay.show {
+        display: block;
+    }
+    .character {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .character-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .character-text h3 {
+        font-size: 2rem;
+    }
+
+    .lore {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .lore-text p {
+        margin-bottom: 2rem;
+    }
+
+    .weapons-content,
+    .artifacts-content,
+    .team-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .box {
+        padding: 25px 30px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    :root {
+        --big-font: 2.2em;
+        --h2-font: 2rem;
+        --p-font: 0.95rem;
+    }
+
+    .character-text h1 {
+        font-size: var(--big-font);
+    }
+
+    .character-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .lore-img img {
+        max-width: 100%;
+    }
+
+    .box h3, .box h5 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao Portfolio Website</title>
+    <link rel="stylesheet" href="xiao.css">
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!---------Header Section--------->
+    <header>
+        <a href="#" class="logo">Xi<span>ao</span></a>
+        <ul class="navlist">
+             <li><a href="#character" class="active">Character</a></li>
+             <li><a href="#lore">Lore</a></li>
+             <li><a href="#weapons">Weapons</a></li>
+             <li><a href="#artifacts">Artifacts</a></li>
+             <li><a href="#Team">Team</a></li>
+        </ul>
+       <div class="bx bx-menu" id="menu-icon"></div>
+
+            <!-- The button to open the login form -->
+<!-- <button id="openButton">Login</button> -->
+
+<!-- The login form popup -->
+<!-- <div id="loginPopup" class="overlay">
+    <div class="login-container">
+        <span class="close-btn" id="closeButton">&times;</span>
+        <h2>Login</h2><br>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+
+            <input type="submit" value="Sign up"><br><br>
+
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+        </form>
+    </div>
+</div> -->
+       
+    </header>
+
+    <!--------Home Section------------>
+    <section class="character" id="character">
+        <div class="character-text">
+            <div class="slide">
+                <span class="one">Character</span>
+                <span class="two">Guide</span>
+            </div>
+            <h1>Xiao</h1>
+            <h3>Anemo <span>Character.</span></h3>
+            <p>He is an adeptus, under the name Alatus, <br> and the sole surviving member of the five foremost Yakshas</p>
+            <div class="button">
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----section para sa about------>
+    <section class="lore" id="lore">
+        <div class="lore-img">
+            <img src="constellation.webp">
+        </div>
+
+        <div class="lore-text">
+            <h2>Character <span>Constellation</span></h2>
+            <h4>Lore</h4>
+            <p>One of the mighty and illuminated adepti guarding Liyue, also heralded as the "Vigilant Yaksha."
+                Despite his youthful appearance, tales of his exploits have been documented for millennia.
+                He is especially fond of Wangshu Inn's Almond Tofu.
+                This is because it tastes just like the sweet dreams he used to devour.</p>
+                <a href="#" class="btn">More</a>
+        </div>
+    </section>
+
+    <!-------weapons----->
+    <section class="weapons" id="weapons">
+        <div class="main-text">
+            <h2><span>Recommended</span> Weapons</h2>
+        </div>
+        <div class="weapons-content">
+            <div class="box">
+                <h3>Primordial Jade</h3>
+                <img src="weapons/primordial.png">
+                <p>Bonus Stat: CRIT Rate 4.8%
+                    Skill Effect: On hit, increases ATK by 3.2% for 6s. Max 7 stacks.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <h3>Staff of Homa</h3>
+                <img src="weapons/homa.png">
+                <p>Bonus Stat: CRIT DMG 14.4%
+                    Skill Effect: HP increased by 20%. ATK Bonus based on 0.8% of the Max HP.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            
+            <div class="box">
+                <h3>Sky Ward</h3>
+                <img src="weapons/skyward.png">
+                <p>Bonus Stat: CRIT Rate 8.0%
+                    If there are at least 2 enemies nearby, ATK and DEF is increased by 16%. </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <h3>Blackcliff</h3>
+                <img src="weapons/blackcliff.png">
+                <p>Bonus Stat: CRIT DMG + 12.0%
+                    After defeating an enemy, ATK is increased by 12% for 30s.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <h3>DeathMatch</h3>
+                <img src="weapons/deathmatch.png">
+                <p>Bonus Stat: CRIT RATE + 8.0%
+                    ATK and DEF is increased by 16%. ATK is increased by 24%.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <h3>Lithic Spear</h3>
+                <img src="weapons/lithicspear.png">
+                <p>Bonus Stat: ATK + 6.0%
+                     Character gains 7% ATK increase and a 3% CRIT Rate increase. 
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!----artifacts------>
+    <section class="artifacts" id="artifacts">
+        <div class="main-text">
+            <h2><span>Recommended</span> Artifacts</h2>
+        </div>
+        <div class="artifacts-content">
+            <div class="box">
+                <img src="artifacts/vermillion.png">
+                    <h5>Vermillion</h5>
+                    <p>This artifact is good for characters like Xiao and other whose Elemental Burst can deplete HP and boost his Normal ATK DMG!</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="artifacts/viridescent.png">
+                    <h5>Viridescent</h5>
+                    <p>The value of the Viridescent Venerer Set comes from its flexibility as a DPS or support set. It increases the character's Anemo DMG</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="artifacts/gladiator.png">
+                    <h5>Gladiator</h5>
+                    <p>This set provides the highest raw damage boost for melee-type characters and would be a staple set for main DPS characters.</p>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-------team-------->
+    <section class="Team" id="Team">
+        <div class="main-text">
+            <h2><span>Best</span> Team</h2>
+        </div>
+        <div class="team-content">
+            <div class="box">
+                <img src="team/benp.png">
+                <h3>Benett</h3>
+            </div>
+
+            <div class="box">
+                <img src="team/faruzanp.png">
+                <h3>Faruzan</h3>
+            </div>
+
+            <div class="box">
+                <img src="team/xiaop.png">
+                <h3>Xiao</h3>
+            </div>
+
+            <div class="box">
+                <img src="team/zhongp.png">
+                <h3>Zhongli</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="xiao.js"></script>
+</body>
+</html>
